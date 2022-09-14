@@ -1,15 +1,20 @@
 #include "holberton.h"
 
 /**
- *_islower - a function that checks for lowercase character
- *@c: single letter input
- *Return: 1 if int c is lowercase, 0 if otherwise
- **/
-int _islower(int c)
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
+ */
+int main(void)
 {
-	    if (c >= 'a' && c <= 'z')
-	    return (1);
-	    else
-            return (0);
+	char *sh = "Holberton";
+
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
+	_putchar('\n');
+	return (0);
 }
 
